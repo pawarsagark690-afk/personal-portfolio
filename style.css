@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+    color: #4b2e1e;
+    background-color: #fff8e7;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #6f4e37;
+}
+
+a {
+    color: #4b2e1e;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+section {
+    padding: 40px 80px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #6f4e37;
+}
+
+.navbar h3 {
+    color: #fff8e7;
+    font-size: 24px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff8e7;
+}
+
+.navbar a:hover {
+    color: #d2b48c;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f5ebd7;
+}
+
+#home h1 {
+    font-size: 40px;
+}
+
+#home img {
+    border-radius: 50%;
+    margin-top: 20px;
+    object-fit: cover;
+    border: 4px solid #6f4e37;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#skills li {
+    border: 2px solid #6f4e37;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f5ebd7;
+}
+
+.project {
+    border: 2px solid #6f4e37;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f5ebd7;
+}
+
+.project a {
+    color: #6f4e37;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+#contact {
+    background-color: #f5ebd7;
+}
+
+.contact-box {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input {
+    padding: 10px;
+    border: 1px solid #6f4e37;
+    border-radius: 5px;
+    background-color: #fff8e7;
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+button {
+    background-color: #6f4e37;
+    color: #fff8e7;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+button:hover {
+    background-color: #4b2e1e;
+}
+
+.footer {
+    background-color: #4b2e1e;
+    color: #fff8e7;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a {
+    color: #fff8e7;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #d2b48c;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    section {
+        padding: 30px 20px;
+    }
+    .contact-box {
+        flex-direction: column;
+    }
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+}
